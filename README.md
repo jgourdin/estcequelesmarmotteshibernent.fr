@@ -38,16 +38,16 @@ cd dist/fr && python3 -m http.server 8000
 
 ## Mettre en ligne (Vercel)
 
-Un projet Vercel par dossier :
+Vercel construit le site à chaque push grâce à `vercel.json` : il lance `python3 build.py` et sert le dossier `public/`.
 
-```bash
-cd dist/fr && npx vercel deploy --prod
-cd ../en && npx vercel deploy --prod
-```
+Deux projets Vercel branchés sur ce même dépôt, un par langue :
 
-Au premier lancement, Vercel demande de se connecter et de nommer le projet. Ensuite, dans chaque projet : Settings, Domains, ajouter le domaine. Vercel affiche les enregistrements DNS à créer chez OVH (zone DNS du domaine).
+| Projet | Variable d'environnement | Domaine |
+| --- | --- | --- |
+| site français | `MARMOT_SITE=fr` (valeur par défaut) | estcequelesmarmotteshibernent.fr |
+| site anglais | `MARMOT_SITE=en` | aremarmotshibernating.com |
 
-Après une modification : `python3 build.py`, puis les deux mêmes commandes.
+La variable se règle dans Settings, Environment Variables. Le domaine s'ajoute dans Settings, Domains ; Vercel affiche alors les enregistrements DNS à créer chez OVH.
 
 ## Après la mise en ligne
 

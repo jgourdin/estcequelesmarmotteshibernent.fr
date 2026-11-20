@@ -7,6 +7,7 @@ One site per language, each on its own domain. Outputs, in dist/:
   fr/             French site (index.html, robots.txt, sitemap.xml, favicon.svg, og.png)
   en/             English site, same files; also the x-default for search engines
   artifact.html   single-file bilingual version for a claude.ai artifact
+and public/, a copy of the site named by the MARMOT_SITE environment variable (fr or en), for the host to serve.
 
 Text lives in src/i18n.json. Each static page is pre-rendered in its language so
 crawlers read real text without running JavaScript.
@@ -146,3 +147,15 @@ for lang in ("fr", "en"):
         encoding="utf-8",
     )
 print("Built dist/fr for", SITE["fr"], "and dist/en for", SITE["en"])
+
+# On the host, each project publishes one language: MARMOT_SITE picks it (fr by default) and public/ is what gets served.
+import os
+
+site = os.environ.get("MARMOT_SITE", "fr")
+if site not in SITE:
+    sys.exit("MARMOT_SITE must be fr or en, got %r" % site)
+PUBLIC = ROOT / "public"
+if PUBLIC.exists():
+    shutil.rmtree(PUBLIC)
+shutil.copytree(DIST / site, PUBLIC)
+print("Published the %s site to public/" % site)

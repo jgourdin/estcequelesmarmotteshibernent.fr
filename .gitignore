@@ -1,5 +1,6 @@
 # Built by build.py
 dist/
+public/
 
 # Hosting project links
 .vercel/
