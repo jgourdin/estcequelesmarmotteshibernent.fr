@@ -414,8 +414,11 @@
       while (nextT < ctx.currentTime + 0.15) { var six = 60 / (sleepy ? 76 : 148) / 4; schedule(step++, nextT, six); nextT += six; }
     }
     function start() {
-      if (ctx) { if (on && ctx.state === 'suspended') ctx.resume(); return; }
+      // Phones leave the context suspended (or "interrupted" on iOS) until a qualifying gesture, so every gesture retries.
+      if (ctx) { if (on && ctx.state !== 'running') ctx.resume(); return; }
       try {
+        // Without this, iOS mutes Web Audio whenever the ringer switch is on silent.
+        if (navigator.audioSession) navigator.audioSession.type = 'playback';
         ctx = new (window.AudioContext || window.webkitAudioContext)();
         var comp = ctx.createDynamicsCompressor(); comp.connect(ctx.destination);
         master = ctx.createGain(); master.gain.value = on ? 0.55 : 0; master.connect(comp);
@@ -426,6 +429,7 @@
         var data = noise.getChannelData(0);
         for (var i = 0; i < data.length; i++) data[i] = Math.random() * 2 - 1;
         setInterval(tick, 25);
+        if (ctx.state !== 'running') ctx.resume();
       } catch (e) { ctx = null; }
     }
     function live() { return ctx && on && ctx.state === 'running'; }
@@ -472,14 +476,15 @@
     this.setAttribute('aria-pressed', on ? 'true' : 'false');
     this.textContent = on ? L.soundOn : L.soundOff;
   });
-  // Browsers only allow sound after a first gesture, so the score starts on the first click, tap or key press.
+  // Browsers only allow sound after a gesture, so the score starts on the first click, tap or key press.
   var HINT = L.hint;
   function firstGesture() {
     audio.start();
     if ($('shout').textContent === HINT) $('shout').textContent = '';
-    window.removeEventListener('pointerdown', firstGesture); window.removeEventListener('keydown', firstGesture);
   }
-  window.addEventListener('pointerdown', firstGesture); window.addEventListener('keydown', firstGesture);
+  // Mobile browsers only count the end of a touch or a click as a gesture, never its start. The listeners stay on
+  // so the sound can also come back after a phone call or a tab switch.
+  ['pointerup', 'touchend', 'click', 'keydown'].forEach(function (ev) { window.addEventListener(ev, firstGesture, true); });
   document.addEventListener('visibilitychange', function () { audio.pause(document.hidden); });
 
   var shoutTimer;
