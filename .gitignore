@@ -1,0 +1,9 @@
+# Built by build.py
+dist/
+
+# Hosting project links
+.vercel/
+
+# Local noise
+.DS_Store
+__pycache__/

@@ -1,0 +1,160 @@
+{
+  "fr": {
+    "locale": "fr-FR",
+    "title": "Marmotte-o-mètre 3000",
+    "description": "Les marmottes hibernent-elles en ce moment ? La réponse du jour pour la marmotte des Alpes, avec le calendrier de l'année, en 3D et en musique.",
+    "canvasAria": "Scène 3D : une marmotte colossale au sommet d'une montagne",
+    "nogl": "Ce navigateur refuse la 3D. Le verdict reste valable, il est juste moins spectaculaire.",
+    "telemetryAria": "Télémétrie de la marmotte",
+    "bpmLabel": "Rythme cardiaque",
+    "bpmUnit": "bpm, tempo réel",
+    "tempLabel": "Température corporelle",
+    "wakeIn": "Réveil dans",
+    "sleepIn": "Grand sommeil dans",
+    "dayAbbr": "j",
+    "activity": "Niveau d'activité",
+    "powerLabel": "Niveau de puissance",
+    "zero": "0,0",
+    "yes": "OUI",
+    "eyebrow": "Statut d'hibernation",
+    "toggleOpen": "Changer la date ▾",
+    "toggleClose": "Fermer ▴",
+    "soundOn": "Cor des Alpes : activé",
+    "soundOff": "Cor des Alpes : coupé",
+    "poke": "Provoquer la marmotte",
+    "scrubAria": "Jour de l'année",
+    "today": "Aujourd'hui",
+    "months": ["Jan", "Fév", "Mar", "Avr", "Mai", "Juin", "Juil", "Août", "Sep", "Oct", "Nov", "Déc"],
+    "legend": ["Le grand sommeil", "L'éveil", "Le règne", "Le dernier festin"],
+    "fine": "Marmotte des Alpes · dates indicatives · glisser dans tous les sens pour tourner la caméra · génépi non fourni",
+    "more": "En savoir plus ↓",
+    "hint": "Clique ou touche l'écran pour lancer la musique",
+    "groundhogVerdict": "Elles dorment. Même aujourd'hui.",
+    "groundhogTag": "Le Jour de la marmotte. Elle n'est pas venue.",
+    "dontWake": "Ne. Pas. Réveiller.",
+    "eyeOpen": "Elle a ouvert un œil. Courez.",
+    "tiers": ["", "Forme finale.", "Forme finale. La vraie.", "Forme cosmique.", "Marmotte primordiale. L'univers s'excuse."],
+    "cards": {
+      "dodo": ["Cet hiver", "Un rongeur", "Ne fera rien"],
+      "love": ["Ce printemps", "Elle revient", "Et elle veut une tartiflette"],
+      "sun": ["Cet été", "Un caillou", "Du génépi"],
+      "miam": ["Cet automne", "Un dernier festin", "Avant la nuit"]
+    },
+    "phases": {
+      "dodo": {
+        "verdict": "Elles dorment.",
+        "shout": "Ne. Pas. Réveiller.",
+        "tags": ["Cet hiver, un rongeur ne fera absolument rien.", "Cinq battements par minute. Zéro regret.", "Six mois. Un terrier. Aucune réunion.", "Le monde retient son souffle. Elle aussi, à peu près."]
+      },
+      "love": {
+        "verdict": "Elles se réveillent.",
+        "shout": "Fiiiiiiit !",
+        "tags": ["Elle a dormi six mois. Elle a faim. Elle est célibataire.", "Le printemps n'était pas prêt.", "Un terrier s'ouvre. Plus rien ne sera comme avant."]
+      },
+      "sun": {
+        "verdict": "Elles sont debout.",
+        "shout": "Fiiiiiiit !",
+        "tags": ["Cet été, personne n'approchera de ce caillou.", "Un sifflement. Mille randonneurs en fuite.", "Elle a vu l'aigle. L'aigle a compris."]
+      },
+      "miam": {
+        "verdict": "Debout. Pour l'instant.",
+        "shout": "Fiiiiiiit ! (la bouche pleine)",
+        "tags": ["Septembre. Le dernier buffet avant la nuit.", "Elle prendra un tiers de son poids. Sans aucun remords.", "Chaque pissenlit compte."]
+      }
+    },
+    "seo": {
+      "h2": "Les marmottes hibernent-elles en ce moment ?",
+      "generic": "La marmotte des Alpes hiberne environ six mois par an, de début octobre à la mi-avril. Le reste de l'année, elle est dehors : elle mange, elle surveille, elle siffle.",
+      "yes": "Oui. Aujourd'hui, {date}, les marmottes des Alpes hibernent. Réveil prévu vers la mi-avril, dans environ {days} jours.",
+      "no": "Non. Aujourd'hui, {date}, les marmottes des Alpes sont réveillées. Elles retournent hiberner début octobre, dans environ {days} jours.",
+      "faq": [
+        { "q": "Quand les marmottes hibernent-elles ?", "a": "La marmotte des Alpes entre en hibernation entre fin septembre et mi-octobre et en sort entre mars et mi-mai. Plus le terrier est haut en altitude, plus l'hiver est long. Ce site retient une période indicative du 1er octobre au 14 avril." },
+        { "q": "Combien de temps dure l'hibernation ?", "a": "Environ six mois, soit près de 200 jours. C'est la moitié de la vie d'une marmotte." },
+        { "q": "Que se passe-t-il dans son corps ?", "a": "Son cœur passe d'environ 140 battements par minute à 4 ou 5. Sa température descend de 37 °C à 5 à 8 °C, et son métabolisme tombe à quelques pour cent de la normale. Elle se réveille brièvement de temps en temps, puis se rendort." },
+        { "q": "Mange-t-elle pendant l'hiver ?", "a": "Non. Elle vit sur la graisse accumulée pendant l'été et perd environ 30 % de son poids avant le printemps." },
+        { "q": "Où dorment les marmottes ?", "a": "En famille, serrées les unes contre les autres dans une chambre tapissée de foin, au fond d'un terrier dont l'entrée est bouchée de l'intérieur. La neige qui recouvre le terrier l'isole du froid." }
+      ],
+      "sources": "Sources :",
+      "switch": "English version"
+    }
+  },
+  "en": {
+    "locale": "en-GB",
+    "title": "Marmot-o-meter 3000",
+    "description": "Are marmots hibernating right now? Today's answer for the Alpine marmot, with the full yearly calendar, in 3D and set to music.",
+    "canvasAria": "3D scene: a colossal marmot on top of a mountain",
+    "nogl": "This browser refuses 3D. The verdict still stands, it is just less spectacular.",
+    "telemetryAria": "Marmot telemetry",
+    "bpmLabel": "Heart rate",
+    "bpmUnit": "bpm, real tempo",
+    "tempLabel": "Body temperature",
+    "wakeIn": "Waking up in",
+    "sleepIn": "Big sleep in",
+    "dayAbbr": "d",
+    "activity": "Activity level",
+    "powerLabel": "Power level",
+    "zero": "0.0",
+    "yes": "YES",
+    "eyebrow": "Hibernation status",
+    "toggleOpen": "Change the date ▾",
+    "toggleClose": "Close ▴",
+    "soundOn": "Alphorn: on",
+    "soundOff": "Alphorn: off",
+    "poke": "Poke the marmot",
+    "scrubAria": "Day of the year",
+    "today": "Today",
+    "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    "legend": ["The big sleep", "The awakening", "The reign", "The last feast"],
+    "fine": "Alpine marmot · indicative dates · drag in any direction to move the camera · génépi not included",
+    "more": "Learn more ↓",
+    "hint": "Click or tap anywhere to start the music",
+    "groundhogVerdict": "Asleep. Even today.",
+    "groundhogTag": "Groundhog Day. She did not show up.",
+    "dontWake": "Do. Not. Wake.",
+    "eyeOpen": "She opened one eye. Run.",
+    "tiers": ["", "Final form.", "Final form. The real one.", "Cosmic form.", "Primordial marmot. The universe apologises."],
+    "cards": {
+      "dodo": ["This winter", "One rodent", "Will do nothing"],
+      "love": ["This spring", "She returns", "And she wants a tartiflette"],
+      "sun": ["This summer", "One rock", "Some génépi"],
+      "miam": ["This autumn", "One last feast", "Before the night"]
+    },
+    "phases": {
+      "dodo": {
+        "verdict": "They're asleep.",
+        "shout": "Do. Not. Wake.",
+        "tags": ["This winter, one rodent will do absolutely nothing.", "Five beats per minute. Zero regrets.", "Six months. One burrow. No meetings.", "The world holds its breath. So does she, more or less."]
+      },
+      "love": {
+        "verdict": "They're waking up.",
+        "shout": "Wheeeeet!",
+        "tags": ["She slept for six months. She is hungry. She is single.", "Spring was not ready.", "A burrow opens. Nothing will ever be the same."]
+      },
+      "sun": {
+        "verdict": "They're up.",
+        "shout": "Wheeeeet!",
+        "tags": ["This summer, nobody gets near that rock.", "One whistle. A thousand hikers on the run.", "She saw the eagle. The eagle understood."]
+      },
+      "miam": {
+        "verdict": "Up. For now.",
+        "shout": "Wheeeeet! (mouth full)",
+        "tags": ["September. The last buffet before the night.", "She will gain a third of her weight. No remorse.", "Every dandelion counts."]
+      }
+    },
+    "seo": {
+      "h2": "Are marmots hibernating right now?",
+      "generic": "The Alpine marmot hibernates for about six months a year, from early October to mid-April. The rest of the year she is outside: eating, keeping watch, whistling.",
+      "yes": "Yes. Today, {date}, Alpine marmots are hibernating. They should wake up around mid-April, in about {days} days.",
+      "no": "No. Today, {date}, Alpine marmots are awake. They go back into hibernation in early October, in about {days} days.",
+      "faq": [
+        { "q": "When do marmots hibernate?", "a": "Alpine marmots go into hibernation between late September and mid-October and come out between March and mid-May. The higher the burrow, the longer the winter. This site uses an indicative period from 1 October to 14 April." },
+        { "q": "How long does hibernation last?", "a": "About six months, close to 200 days. That is half of a marmot's life." },
+        { "q": "What happens inside her body?", "a": "Her heart slows from about 140 beats per minute to 4 or 5. Her body temperature drops from 37 °C to between 5 and 8 °C, and her metabolism falls to a few per cent of normal. She wakes briefly from time to time, then goes back to sleep." },
+        { "q": "Does she eat during winter?", "a": "No. She lives on the fat stored over the summer and loses about 30% of her body weight before spring." },
+        { "q": "Where do marmots sleep?", "a": "As a family, huddled together in a hay-lined chamber at the bottom of a burrow sealed from the inside. The snow covering the burrow insulates it from the cold." }
+      ],
+      "sources": "Sources:",
+      "switch": "Version française"
+    }
+  }
+}
